@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookHaven | Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html"><h2>Book<span>Haven</span></h2></a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="cart.html">Cart <span id="cartCount">0</span></a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+    </ul>
+</nav>
+
+<div class="dash-layout">
+    <div class="dash-sidebar">
+        <div class="dash-profile">
+            <div class="dash-avatar">AD</div>
+            <p>Admin Portal</p>
+        </div>
+        <nav>
+            <a href="#">📊 Overview</a>
+            <a href="#">📦 Inventory</a>
+            <a href="#">📈 Sales Reports</a>
+            <a href="#">👥 Users</a>
+            <a href="#">⚙️ Settings</a>
+            <a href="#">📁 Export Data</a>
+        </nav>
+    </div>
+    
+    <div class="dash-main">
+        <div class="dash-header">
+    <h2>Stock Management</h2>
+    <div class="header-stats">
+        <div class="header-stat">
+            <strong>1,240</strong>
+            <span>Total Items</span>
+        </div>
+        <div class="header-stat">
+            <strong>42</strong>
+            <span>Pending Orders</span>
+        </div>
+    </div>
+</div>
+        
+        <div class="action-buttons">
+    <div class="action-btn">
+        <div class="action-icon">📋</div>
+        <h4>View All Stock</h4>
+        <button class="btn">View</button>
+    </div>
+    <div class="action-btn">
+        <div class="action-icon">🗑️</div>
+        <h4>Delete Stock</h4>
+        <button class="btn">Remove</button>
+    </div>
+    <div class="action-btn">
+        <div class="action-icon">🔄</div>
+        <h4>Update Stock</h4>
+        <button class="btn">Edit</button>
+    </div>
+    <div class="action-btn">
+        <div class="action-icon">➕</div>
+        <h4>New Stock</h4>
+        <button class="btn">Add</button>
+    </div>
+</div>
+
+        <!-- Unseen Orders Section -->
+        <div class="orders-section">
+            <h3>🆕 Unseen Orders</h3>
+            <table class="orders-table">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer</th>
+                        <th>Book</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#ORD-001</td>
+                        <td>john@email.com</td>
+                        <td>1984</td>
+                        <td>$12.99</td>
+                        <td><span class="status-pending">Pending</span></td>
+                    </tr>
+                    <tr>
+                        <td>#ORD-002</td>
+                        <td>jane@email.com</td>
+                        <td>The Alchemist</td>
+                        <td>$14.99</td>
+                        <td><span class="status-pending">Pending</span></td>
+                    </tr>
+                    <tr>
+                        <td>#ORD-003</td>
+                        <td>mike@email.com</td>
+                        <td>Mockingbird</td>
+                        <td>$11.99</td>
+                        <td><span class="status-pending">Pending</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Chart Section -->
+        <div class="dash-chart">
+    <h3>Monthly Inventory Growth - 2026</h3>
+    <div class="chart-bars">
+        <div class="chart-bar">
+            <div class="bar"></div>
+            <div class="bar-label">30</div>
+            <div class="bar-price">Jan</div>
+        </div>
+        <div class="chart-bar">
+            <div class="bar"></div>
+            <div class="bar-label">55</div>
+            <div class="bar-price">Feb</div>
+        </div>
+        <div class="chart-bar">
+            <div class="bar"></div>
+            <div class="bar-label">45</div>
+            <div class="bar-price">Mar</div>
+        </div>
+        <div class="chart-bar">
+            <div class="bar"></div>
+            <div class="bar-label">85</div>
+            <div class="bar-price">Apr</div>
+        </div>
+        <div class="chart-bar">
+            <div class="bar"></div>
+            <div class="bar-label">70</div>
+            <div class="bar-price">May</div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <h3>BookHaven</h3>
+        <p>Your sanctuary for the world's most inspiring stories.</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="cart.html">Cart</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 BookHaven Inc. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

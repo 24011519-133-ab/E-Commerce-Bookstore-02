@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookHaven | Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html"><h2>Book<span>Haven</span></h2></a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="cart.html">Cart <span id="cartCount">0</span></a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+    </ul>
+</nav>
+
+<div class="cart-page">
+    <div class="container">
+        <h1>Your Shopping Cart</h1>
+        <p class="cart-subtitle">Review your items before checkout</p>
+        
+        <div class="cart-table-container">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="cartBody">
+                    <tr class="cart-item">
+                        <td class="cart-product">
+                            <img src="images/1984.jpeg" alt="1984" class="cart-img">
+                            <div class="cart-info">
+                                <h4>1984</h4>
+                                <p>George Orwell</p>
+                            </div>
+                        </td>
+                        <td class="cart-price">$12.99</td>
+                        <td><input type="number" value="1" min="1" class="cart-qty"></td>
+                        <td class="cart-total">$12.99</td>
+                        <td><button class="cart-remove">✕</button></td>
+                    </tr>
+                    <tr class="cart-item">
+                        <td class="cart-product">
+                            <img src="images/alchemist.jpeg" alt="The Alchemist" class="cart-img">
+                            <div class="cart-info">
+                                <h4>The Alchemist</h4>
+                                <p>Paulo Coelho</p>
+                            </div>
+                        </td>
+                        <td class="cart-price">$14.99</td>
+                        <td><input type="number" value="1" min="1" class="cart-qty"></td>
+                        <td class="cart-total">$14.99</td>
+                        <td><button class="cart-remove">✕</button></td>
+                    </tr>
+                    <tr class="cart-item">
+                        <td class="cart-product">
+                            <img src="images/mockingbird.jpeg" alt="Mockingbird" class="cart-img">
+                            <div class="cart-info">
+                                <h4>To Kill a Mockingbird</h4>
+                                <p>Harper Lee</p>
+                            </div>
+                        </td>
+                        <td class="cart-price">$11.99</td>
+                        <td><input type="number" value="1" min="1" class="cart-qty"></td>
+                        <td class="cart-total">$11.99</td>
+                        <td><button class="cart-remove">✕</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="cart-bottom">
+            <div class="cart-coupon">
+                <input type="text" placeholder="Coupon code" class="coupon-input">
+                <button class="btn coupon-btn">Apply</button>
+            </div>
+
+            <div class="cart-summary">
+                <h3>Order Summary</h3>
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span>$39.97</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span>$5.00</span>
+                </div>
+                <div class="summary-divider"></div>
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <span>$44.97</span>
+                </div>
+                <button class="btn checkout-btn">Proceed to Checkout →</button>
+                <a href="shop.html" class="continue-link">← Continue Shopping</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <h3>Book<span>Haven</span></h3>
+        <p>Your sanctuary for the world's most inspiring stories.</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="cart.html">Cart</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 BookHaven Inc. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
